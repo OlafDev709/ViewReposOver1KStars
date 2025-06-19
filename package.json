@@ -8,8 +8,9 @@
     "tingodb": "^0.4.2"
   },
   "scripts": {
+    "start": "node processing/getThousandStarRepos.js && node processing/getRepoJson.js > processing/repos.json && node processing/renderTemplate.js > index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "OlafDev",
+  "author": "Anthony Garvan",
   "license": "MIT"
 }
